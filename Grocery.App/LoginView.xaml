@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Grocery.App.ViewModels"
+             x:Class="Grocery.App.Views.LoginView"
+             x:DataType="vm:LoginViewModel"
+             Title="LoginView">
+    <StackLayout Padding="20" VerticalOptions="Center">
+        <Label Text="Login" FontSize="24" HorizontalOptions="Center" />
+        <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email" />
+        <Entry Placeholder="Password" Text="{Binding Password}" IsPassword="True" />
+        <Button Text="Login" Command="{Binding LoginCommand}" />
+        <Label Text="{Binding LoginMessage}" TextColor="Red" />
+    </StackLayout>
+</ContentPage>
