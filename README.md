@@ -3,7 +3,7 @@
 ## Branching strategie
 Voor deze sprint werk ik met een Git Flow branching strategie.
 - De `main` branch bevat de werkende code.
-- Voor elke user story maak ik een aparte feature branch aan vanuit `main`.
+- Voor elke user story maak ik een aparte feature branch aan vanuit `dev`.
 - Na afronding van een user story wordt de feature branch gemerged naar `dev` en verwijderd.
 
 Ik heb gekozen voor deze branching strategie omdat het een gestructureerde manier is om het project te ontwikkelen ookal is dit een wat zwaardere methode voor kleinere teams of solo developers.
